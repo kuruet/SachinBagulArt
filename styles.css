@@ -1,0 +1,73 @@
+/* -------------------------------
+   Custom Backgrounds and Effects
+---------------------------------- */
+
+.sketch-texture {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.brush-stroke {
+    position: relative;
+}
+
+.brush-stroke::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    opacity: 0.6;
+}
+
+/* -------------------------------
+   Card Hover Effect
+---------------------------------- */
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+}
+
+/* -------------------------------
+   Sketch Border Effect
+---------------------------------- */
+
+.sketch-border {
+    border: 3px solid #D4AF37;
+    border-radius: 4px;
+    position: relative;
+}
+
+.sketch-border::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border: 2px dashed rgba(212, 175, 55, 0.3);
+    border-radius: 6px;
+}
+
+/* -------------------------------
+   Navigation Link Style
+---------------------------------- */
+
+.nav-link {
+    color: #F5F5DC;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #D4AF37;
+}
+
+
+
